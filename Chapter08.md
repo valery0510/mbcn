@@ -290,23 +290,23 @@ int64_t GetBlockValue(int nHeight, int64_t nFees)
 
 **表8-1 “普通“交易输入的结构**
 
-| Size | Field | Description |
-| -- | -- | -- |
-| 32 bytes| Transaction Hash | Pointer to the transaction containing the UTXO to be spent |
-| 4 bytes | Output Index| The index number of the UTXO to be spent, first one is 0 |
-|1-9 bytes (VarInt) | Unlocking-Script Size |Unlocking-Script length in bytes, to follow |
-| Variable | Unlocking-Script |  A script that fulfills the conditions of the UTXO locking script.|
-| 4 bytes | Sequence Number| Currently disabled Tx-replacement feature, set to 0xFFFFFFFF |
+|长度|	字段	|描述|
+|--|--|--|
+|32 字节	|交易哈希	|指向包含有将要被花费UTXO的交易|
+|4 字节	|交易输出索引|UTXO在交易中的索引，0 从0开始计数|
+|1-9 字节|	解锁脚本长度|解锁脚本的长度|
+|(VarInt) 可变长度|	Unlocking-Script	|一段脚本，用来解锁UTXO锁定脚本中的条件|
+|4 bytes	|顺序号	|当前未启用的TX替换功能，设置为0xFFFFFFFF|
 
 **表8-2 生成交易输入的结构**
 
-| Size | Field | Description |
-| -- | -- | -- |
-|32 bytes | Transaction Hash| All bits are zero: Not a transaction hash reference |
-| 4 bytes| Output Index | All bits are ones: 0xFFFFFFFF |
-|1-9 bytes (VarInt) | Coinbase Data Size |Length of the coinbase data, from 2 to 100 bytes |
-| Variable | Coinbase Data |Arbitrary data used for extra nonce and mining tags in v2 blocks, must begin with block height|
-| 4 bytes | Sequence Number| Set to 0xFFFFFFFF |
+|长度|	字段|	描述|
+|--|--|--|
+|32 字节	|交易哈希	|不引用任何一个交易，值全部为0|
+|4 字节	|交易输出索引	|值全部为1|
+|1-9 字节|Coinbase数据长度|	coinbase数据长度|
+|(VarInt) 可变长度|	Coinbase数据	|在v2版本的区块中，除了需要以区块高度开始外，其他数据可以任意填写，用于extra nonce和挖矿标签|
+|4 bytes|	顺序号	|值全部为1，0xFFFFFFFF|
 
 在创币交易中，“交易哈希”字段32个字节全部填充0，“交易输出索引”字段全部填充0xFF(十进制的255)，这两个字段的值表示不引用UTXO。“解锁脚本”由coinbase数据代替，数据可以由矿工自定义。
 
@@ -374,14 +374,14 @@ $ ./satoshi-words
 
 **表8-3 区块头的结构**
 
-| Size | Field | Description |
-| -- | -- | -- |
-| 4 bytes | Version | A version number to track software/protocol upgrades |
-| 32 bytes | Previous Block Hash|A reference to the hash of the previous (parent) block in the chain |
-| 32 bytes | Merkle Root | A hash of the root of the merkle tree of this block’s transactions |
-| 4 bytes | Timestamp| The approximate creation time of this block (seconds from Unix Epoch)|
-|4 bytes| Difficulty Target | The proof-of-work algorithm difficulty target for this block |
-| 4 bytes | Nonce | A counter used for the proof-of-work algorithm |
+|长度	|字段	|描述|
+|--|--|--|
+|4 字节|	版本|	版本号，用来跟踪软件或协议的升级|
+|32 字节	|前区块哈希|	链中前一个区块（父区块）的哈希值|
+|32 字节|	Merkle根	|一个哈希值，表示这个区块中全部交易构成的merkle树的根|
+|4 字节|	时间戳	|以Unix纪元开始到当下秒数记录的区块生成的时刻|
+|4 bytes|	难度目标|	该区块的工作量证明算法难度目标|
+|4 bytes|	Nonce	|一个用于工作量证明算法的计数器|
 
 在区块277,316被挖出的时候，区块结构中用来表示版本号的字段值为2，长度为4字节，以小段格式编码值为0x20000000。接着，挖矿节点需要填充“前区块哈希”，在本例中，这个值为Jing的节点从网络上接收到的区块277,315的区块头哈希值，它是区块277316候选区块的父区块。区块277,315的区块头哈希值为：
 
@@ -424,11 +424,11 @@ Python 2.7.1
 >>> print hashlib.sha256("I am Satoshi Nakamoto").hexdigest() 5d7c7ba21cbbcd75d14800b100252d5b428e5b1213d27c385bc141ca6b47989e
 ```
 
-Example 8-8 shows the result of calculating the hash of "I am Satoshi Nakamoto": `5d7c7ba21cbbcd75d14800b100252d5b428e5b1213d27c385bc141ca6b47989e`. This 256-bit number is the hash or digest of the phrase and depends on every part of the phrase. Adding a single letter, punctuation mark, or any other character will produce a different hash.
+在例8-8中，`5d7c7ba21cbbcd75d14800b100252d5b428e5b1213d27c385bc141ca6b47989e`是"I am Satoshi Nakamoto"的哈希值。改变原句中的任何一个字母、标点、或增加字母都会产生不同的哈希值。
 
-Now, if we change the phrase, we should expect to see completely different hashes. Let’s try that by adding a number to the end of our phrase, using the simple Python scripting in Example 8-9.
+如果我们改变原句，得到的应该是完全不同的哈希值。例如，我们在句子末尾加上一个数字，运行例8-9中的Python脚本。
 
-Example 8-9. SHA256 A script for generating many hashes by iterating on a nonce
+**例8-9 通过迭代 nonce 来生成不同哈希值的脚本（SHA256）**
 
 ```
 # example of iterating a nonce in a hashing algorithm's input
