@@ -1,8 +1,7 @@
 # Summary
 
-* [简介](Foreword.md)
 * [前言](Preface.md)
-* [快速术语检索](Glossary.md)
+* [快速术语检索](QGlossary.md)
 * [第一章 介绍](Chapter01.md)
 * [第二章 比特币的原理](Chapter02.md)
 * [第三章 比特币客户端](Chapter03.md)
