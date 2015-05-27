@@ -44,18 +44,17 @@
 | 37 |  [https://github.com/bitcoin/bips/blob/ master/bip-0037.mediawiki](https://github.com/bitcoin/bips/blob/ master/bip-0037.mediawiki) | Bloom filtering | Mike Hearn and Matt Corallo | Standard | Accepted |
 | 38 |  [https://github.com/bitcoin/bips/blob/ master/bip-0038.mediawiki](https://github.com/bitcoin/bips/blob/ master/bip-0038.mediawiki) | Passphrase-protected private key | Mike Caldwell| Standard |Draft |
 | 39 | [https://github.com/bitcoin/bips/blob/ master/bip-0039.mediawiki](https://github.com/bitcoin/bips/blob/ master/bip-0039.mediawiki)| Mnemonic code for generating deterministic keys |Slush | Standard |Draft|
-| 40 |   | Stratum wire protocol | Slush | Standard |BIP number allocated |
-| 41|  | Stratum mining protocol |Slush| Standard | BIP number allocated |
+| 40 | -  | Stratum wire protocol | Slush | Standard |BIP number allocated |
+| 41| - | Stratum mining protocol |Slush| Standard | BIP number allocated |
 | 42 |  [https://github.com/bitcoin/bips/blob/ master/bip-0042.mediawiki](https://github.com/bitcoin/bips/blob/ master/bip-0042.mediawiki)|A finite monetary supply for bitcoin | Pieter Wuille | Standard | Draft |
-|43 |  [https://github.com/bitcoin/bips/blob/ master/bip-0043.mediawiki](https://github.com/bitcoin/bips/blob/ master/bip-0043.mediawiki) | Purpose Field for Deterministic Wallets | Slush | Standard |Draft |
+| 43 |  [https://github.com/bitcoin/bips/blob/ master/bip-0043.mediawiki](https://github.com/bitcoin/bips/blob/ master/bip-0043.mediawiki) | Purpose Field for Deterministic Wallets | Slush | Standard |Draft |
 | 44 |  [https://github.com/bitcoin/bips/blob/ master/bip-0044.mediawiki](https://github.com/bitcoin/bips/blob/ master/bip-0044.mediawiki) | Multi-Account Hierarchy for Deterministic Wallets | Slush | Standard| Draft |
 | 50 | [https://github.com/bitcoin/bips/blob/ master/bip-0050.mediawiki](https://github.com/bitcoin/bips/blob/ master/bip-0050.mediawiki)| March 2013 Chain Fork Post- Mortem |Gavin Andresen | Informational |Draft |
 | 60 |  [https://github.com/bitcoin/bips/blob/ master/bip-0060.mediawiki](https://github.com/bitcoin/bips/blob/ master/bip-0060.mediawiki) | Fixed Length “version” Message (Relay-Transactions Field) | Amir Taaki | Standard | Draft |
 | 61 |  [https://github.com/bitcoin/bips/blob/ master/bip-0061.mediawiki](https://github.com/bitcoin/bips/blob/ master/bip-0061.mediawiki) | “reject” P2P message | Gavin Andresen | Standard | Draft |
 | 62 |  [https://github.com/bitcoin/bips/blob/ master/bip-0062.mediawiki](https://github.com/bitcoin/bips/blob/ master/bip-0062.mediawiki) | Dealing with malleability | Pieter Wuille | Standard | Draft |
-|63 |   | Stealth Addresses | Peter Todd | Standard | BIP number allocated |
-| 64 |  [https://github.com/bitcoin/bips/blob/
-master/bip-0064.mediawiki](https://github.com/bitcoin/bips/blob/ master/bip-0064.mediawiki) |getutxos message | Mike Hearn| Standard |  Draft |
+| 63 |  - | Stealth Addresses | Peter Todd | Standard | BIP number allocated |
+| 64 |  [https://github.com/bitcoin/bips/blob/master/bip-0064.mediawiki](https://github.com/bitcoin/bips/blob/ master/bip-0064.mediawiki) |getutxos message | Mike Hearn| Standard |  Draft |
 | 70 |  [https://github.com/bitcoin/bips/blob/ master/bip-0070.mediawiki](https://github.com/bitcoin/bips/blob/ master/bip-0070.mediawiki) | Payment protocol | Gavin Andresen | Standard |  Draft |
 | 71 |  [https://github.com/bitcoin/bips/blob/ master/bip-0071.mediawiki](https://github.com/bitcoin/bips/blob/ master/bip-0071.mediawiki) | Payment protocol MIME types| Gavin Andresen | Standard| Draft |
 | 72 | [https://github.com/bitcoin/bips/blob/ master/bip-0072.mediawiki](https://github.com/bitcoin/bips/blob/ master/bip-0072.mediawiki) | Payment protocol URIs | Gavin Andresen| Standard |  Draft |

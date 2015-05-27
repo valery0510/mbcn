@@ -1,4 +1,4 @@
-# 附录C pycoin库、实用密钥程序ku和交易程序tx
+# 附录3 pycoin库、实用密钥程序ku和交易程序tx
 
 
 [pycoin](https://github.com/richardkiss/pycoin)库起初由Richard Kiss 撰写和维护 ，基于 Python 脚本的处理交易密钥，不仅支持比特币交易，也支持其他非标准脚本语言的交易类型。
@@ -55,7 +55,8 @@ Bitcoin address : 1FNNRQ5fSv1wBi5gyfVBs2rkNheMGt86sp
 
 使用口令创建一个 BIP 32 密钥：
 
-> 本例中的口令很容易猜到。
+> ![](Images/Icon 2.png) 
+<br>本例中的口令很容易猜到。
 
 ```
 $ ku P:foo
@@ -102,39 +103,30 @@ Bitcoin address : 19Vqc8uLTfUonmxUEZac7fz1M5c5ZZbAii
 以 JSON 格式得到信息：
 
 ```
-$ ku P:foo -P -j
-{
- "y_parity": "even" ,
- "public_pair_y_hex":
-"826d8b4d3010aea16ff4c1c1d3ae68541d9a04df54a2c48cc241c2983544de52" ,
- "private_key": "no" ,
- "parent_fingerprint": "00000000" ,
- "tree_depth": "0" ,
- "network": "Bitcoin" ,
- "btc_address_uncompressed": "1MwkRkogzBRMehBntgcq2aJhXCXStJTXHT" ,
- "key_pair_as_sec_uncompressed":
-"04b4e599dfa44555a4ed38bcfff0071d5af676a86abf123c5b4b4e8e67a0b0b13f826d8b4d3010a
-ea16ff4c1c1d3ae68541d9a04df54a2c48cc241c2983544de52" ,
- "public_pair_x_hex":
-"b4e599dfa44555a4ed38bcfff0071d5af676a86abf123c5b4b4e8e67a0b0b13f" ,
- "wallet_key": "xpub661MyMwAqRbcFVF9ULcqLdsEa5WnCCugQAcgNd9iEMQ31tgH6u4DLQWo
-QayvtSVYFvXz2vPPpbXE1qpjoUFidhjFj82pVShWu9curWmb2zy" ,
- "chain_code":
-"5eeb1023fd6dd1ae52a005ce0e73420821e1d90e08be980a85e9111fd7646bbc" ,
- "child_index": "0" ,
- "hash160_uncompressed": "e5bd3a7e6cb62b4c820e51200fb1c148d79e67da" ,
- "btc_address": "19Vqc8uLTfUonmxUEZac7fz1M5c5ZZbAii" ,
- "fingerprint": "5d353a2e" ,
- "hash160": "5d353a2ecdb262477172852d57a3f11de0c19286" ,
- "input": "P:foo" ,
-Key Utility (KU) | 249
- "public_pair_x":
-"81821982719381104061777349269130419024493616650993589394553404347774393168191" ,
- "public_pair_y":
-"58994218069605424278320703250689780154785099509277691723126325051200459038290" ,
- "key_pair_as_sec":
-"02b4e599dfa44555a4ed38bcfff0071d5af676a86abf123c5b4b4e8e67a0b0b13f"
-}```
+	$ ku P:foo -P -j
+	{
+		"y_parity": "even" ,
+		"public_pair_y_hex":"826d8b4d3010aea16ff4c1c1d3ae68541d9a04df54a2c48cc241c2983544de52" ,
+	"private_key": "no" ,
+	"parent_fingerprint": "00000000" ,
+	"tree_depth": "0" ,
+	"network": "Bitcoin" ,
+	"btc_address_uncompressed": "1MwkRkogzBRMehBntgcq2aJhXCXStJTXHT" ,
+	"key_pair_as_sec_uncompressed":"04b4e599dfa44555a4ed38bcfff0071d5af676a86abf123c5b4b4e8e67a0b0b13f826d8b4d3010aea16ff4c1c1d3ae68541d9a04df54a2c48cc241c2983544de52" ,
+	"public_pair_x_hex":"b4e599dfa44555a4ed38bcfff0071d5af676a86abf123c5b4b4e8e67a0b0b13f" ,
+	"wallet_key": "xpub661MyMwAqRbcFVF9ULcqLdsEa5WnCCugQAcgNd9iEMQ31tgH6u4DLQWoQayvtSVYFvXz2vPPpbXE1qpjoUFidhjFj82pVShWu9curWmb2zy" ,
+	"chain_code":"5eeb1023fd6dd1ae52a005ce0e73420821e1d90e08be980a85e9111fd7646bbc" ,
+ 	"child_index": "0" ,
+	"hash160_uncompressed": "e5bd3a7e6cb62b4c820e51200fb1c148d79e67da" ,
+ 	"btc_address": "19Vqc8uLTfUonmxUEZac7fz1M5c5ZZbAii" ,
+ 	"fingerprint": "5d353a2e" ,
+ 	"hash160": "5d353a2ecdb262477172852d57a3f11de0c19286" ,
+ 	"input": "P:foo" ,
+	"public_pair_x":"81821982719381104061777349269130419024493616650993589394553404347774393168191" ,
+	"public_pair_y":"58994218069605424278320703250689780154785099509277691723126325051200459038290" ,
+	"key_pair_as_sec":"02b4e599dfa44555a4ed38bcfff0071d5af676a86abf123c5b4b4e8e67a0b0b13f"
+}
+```
 
 
 BIP32 公钥：
@@ -148,8 +140,8 @@ xpub661MyMwAqRbcFVF9ULcqLdsEa5WnCCugQAcgNd9iEMQ31tgH6u4DLQWoQayvtSVYFvXz2vPPpbXE
 
 ```
 $ ku -w -s3/2 P:foo
-xprv9wTErTSkjVyJa1v4cUTFMFkWMe5eu8ErbQcs9xajnsUzCBT7ykHAwdrxvG3g3f6BFk7ms5hHBvmbdutNmyg6iogWKxx6mefEw4M8EroLgKj```
-
+xprv9wTErTSkjVyJa1v4cUTFMFkWMe5eu8ErbQcs9xajnsUzCBT7ykHAwdrxvG3g3f6BFk7ms5hHBvmbdutNmyg6iogWKxx6mefEw4M8EroLgKj
+```
 
 加强型子密钥：
 
@@ -162,15 +154,15 @@ WIF:
 
 ```
 $ ku -W P:foo
-L26c3H6jEPVSqAr1usXUp9qtQJw6NHgApq6Ls4ncyqtsvcq2MwKH```
-
+L26c3H6jEPVSqAr1usXUp9qtQJw6NHgApq6Ls4ncyqtsvcq2MwKH
+```
 
 地址：
 
 ```
 $ ku -a P:foo
-19Vqc8uLTfUonmxUEZac7fz1M5c5ZZbAii```
-
+19Vqc8uLTfUonmxUEZac7fz1M5c5ZZbAii
+```
 
 生成一串子密钥：
 
@@ -181,7 +173,8 @@ xprv9xWkBDfyBXmZnzKf3bAGifK593gT7WJZPnYAmvc77gUQVej5QHckc5Adtwxa28ACmANi9XhCrRvt
 xprv9xWkBDfyBXmZqdXA8y4SWqfBdy71gSW9sjx9JpCiJEiBwSMQyRxan6srXUPBtj3PTxQFkZJAiwoUpmvtrxKZu4zfsnr3pqyy2vthpkwuoVq
 xprv9xWkBDfyBXmZsA85GyWj9uYPyoQv826YAadKWMaaEosNrFBKgj2TqWuiWY3zuqxYGpHfv9cnGj5P7e8EskpzKL1Y8Gk9aX6QbryA5raK73p
 xprv9xWkBDfyBXmZv2q3N66hhZ8DAcEnQDnXML1J62krJAcf7Xb1HJwuW2VMJQrCofY2jtFXdiEY8UsRNJfqK6DAdyZXoMvtaLHyWQx3FS4A9zw
-xprv9xWkBDfyBXmZw4jEYXUHYc9fT25k9irP87n2RqfJ5bqbjKdT84Mm7Wtc2xmzFuKg7iYf7XFHKkSsaYKWKJbR54bnyAD9GzjUYbAYTtN4ruo```
+xprv9xWkBDfyBXmZw4jEYXUHYc9fT25k9irP87n2RqfJ5bqbjKdT84Mm7Wtc2xmzFuKg7iYf7XFHKkSsaYKWKJbR54bnyAD9GzjUYbAYTtN4ruo
+```
 
 
 生成相关地址：
@@ -203,8 +196,8 @@ Kyjgne6GZwPGB6G6kJEhoPbmyjMP7D5d3zRbHVjwcq4iQXD9QqKQ
 L4B3ygQxK6zH2NQGxLDee2H9v4Lvwg14cLJW7QwWPzCtKHdWMaQz
 L2L2PZdorybUqkPjrmhem4Ax5EJvP7ijmxbNoQKnmTDMrqemY8UF
 L2oD6vA4TUyqPF8QG4vhUFSgwCyuuvFZ3v8SKHYFDwkbM765Nrfd
-KzChTbc3kZFxUSJ3Kt54cxsogeFAD9CCM4zGB22si8nfKcThQn8C```
-
+KzChTbc3kZFxUSJ3Kt54cxsogeFAD9CCM4zGB22si8nfKcThQn8C
+```
 
 通过选择 BIP32 字符串（和子密钥 0/3 相关的那个串）检查是否起作用：
 
@@ -212,8 +205,8 @@ KzChTbc3kZFxUSJ3Kt54cxsogeFAD9CCM4zGB22si8nfKcThQn8C```
 $ ku -W xprv9xWkBDfyBXmZsA85GyWj9uYPyoQv826YAadKWMaaEosNrFBKgj2TqWuiWY3zuqxYGpHfv9cnGj5P7e8EskpzKL1Y8Gk9aX6QbryA5raK73p
 L2L2PZdorybUqkPjrmhem4Ax5EJvP7ijmxbNoQKnmTDMrqemY8UF
 $ ku -a xprv9xWkBDfyBXmZsA85GyWj9uYPyoQv826YAadKWMaaEosNrFBKgj2TqWuiWY3zuqxYGpHfv9cnGj5P7e8EskpzKL1Y8Gk9aX6QbryA5raK73p
-116AXZc4bDVQrqmcinzu4aaPdrYqvuiBEK```
-
+116AXZc4bDVQrqmcinzu4aaPdrYqvuiBEK
+```
 
 好了，看上去很熟悉了。
 
@@ -244,8 +237,8 @@ key pair as sec :
 hash160 : 751e76e8199196d454941c45d1b3a323f1433bd6
  uncompressed : 91b24bf9f5288532960ac687abb035127b1d28a5
 Bitcoin address : 1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH
- uncompressed : 1EHNa6Q4Jz2uvNExL497mE43ikXhwF6kZm```
-
+ uncompressed : 1EHNa6Q4Jz2uvNExL497mE43ikXhwF6kZm
+ ```
 
 莱特币版本：
 
@@ -274,8 +267,8 @@ key pair as sec :
 hash160 : 751e76e8199196d454941c45d1b3a323f1433bd6
  uncompressed : 91b24bf9f5288532960ac687abb035127b1d28a5
 Litecoin address : LVuDpNCSSj6pQ7t9Pv6d6sUkLKoqDEVUnJ
- uncompressed : LYWKqJhtPeGyBAw7WC8R3F7ovxtzAiubdM```
-
+ uncompressed : LYWKqJhtPeGyBAw7WC8R3F7ovxtzAiubdM
+ ```
 
 狗狗币 WIF：
 
@@ -325,16 +318,15 @@ hash160 : 751e76e8199196d454941c45d1b3a323f1433bd6
 Bitcoin address : 1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH```
 
 
-作为狗狗币地址：
-```
+作为狗狗币地址
 
+```
 $ ku -nD 751e76e8199196d454941c45d1b3a323f1433bd6
 input : 751e76e8199196d454941c45d1b3a323f1433bd6
 network : Dogecoin
 hash160 : 751e76e8199196d454941c45d1b3a323f1433bd6
-Dogecoin address : DFpN6QqFfUm3gKNaxN6tNcab1FArL9cZLE```
-
-
+Dogecoin address : DFpN6QqFfUm3gKNaxN6tNcab1FArL9cZL
+```
 
 ### 实用交易程序（TX）
 
@@ -358,8 +350,8 @@ Key Utility (KU) | 253
  [-b BITCOIND_URL] [-o path-to-output-file]
  argument [argument ...]
 tx: error: can't find Tx with id
-49d2adb6e476fa46d8357babf78b1b501fd39e177ac7833124b3f67b17c40c2a```
-
+49d2adb6e476fa46d8357babf78b1b501fd39e177ac7833124b3f67b17c40c2a
+```
 
 糟糕！我们没有设置好网络服务。让我们现在设置：
 
@@ -432,8 +424,7 @@ cea36d008badf5c7866894b191d3239de9582d89b6b452b596f1f1b76347f8cb/
 31/76a914119b098e2e980a229e139a9ed01a469e518e6f2688ac/10000
 065ef6b1463f552f675622a5d1fd2c08d6324b4402049f68e767a719e2049e8d/
 86/76a914119b098e2e980a229e139a9ed01a469e518e6f2688ac/10000
-a66dddd42f9f2491d3c336ce5527d45cc5c2163aaed3158f81dc054447f447a2/0/76a914119b098e2e980a229e139a9ed01a469e518e6f2688ac/
-10000
+a66dddd42f9f2491d3c336ce5527d45cc5c2163aaed3158f81dc054447f447a2/0/76a914119b098e2e980a229e139a9ed01a469e518e6f2688ac/10000
 ffd901679de65d4398de90cefe68d2c3ef073c41f7e8dbec2fb5cd75fe71dfe7/0/76a914119b098
 e2e980a229e139a9ed01a469e518e6f2688ac/100
 d658ab87cc053b8dbcfd4aa2717fd23cc3edfe90ec75351fadd6a0f7993b461d/
@@ -449,6 +440,6 @@ e2e980a229e139a9ed01a469e518e6f2688ac/1337
 d6be34ccf6edddc3cf69842dce99fe503bf632ba2c2adb0f95c63f6706ae0c52/1/76a914119b098
 e2e980a229e139a9ed01a469e518e6f2688ac/2000000
 0e3e2357e806b6cdb1f70b54c3a3a17b6714ee1f0e68bebb44a74b1efd512098/0/410496b538e85
-3519c726a2c91e61ec11600ae1390813a627c66fb8be7947be63c52da7589379515d4e0a604f8141```
-
+3519c726a2c91e61ec11600ae1390813a627c66fb8be7947be63c52da7589379515d4e0a604f8141
 781e62294721166bf621e73a82cbf2342c858eeac/5000000000
+```

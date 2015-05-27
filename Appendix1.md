@@ -128,8 +128,7 @@
 | 关键字 | 值（十六进制） | 描述 |
 | -- | -- | -- |
 | OP_RIPEMD160 | 0xa6 |  返回栈顶项的 RIPEMD160 哈希值|
-| OP_SHA1 | 0xa7  | 返回栈顶项 SHA1 哈希值
- |
+| OP_SHA1 | 0xa7  | 返回栈顶项 SHA1 哈希值|
 | OP_SHA256 | 0xa8 |返回栈顶项 SHA256 哈希值 |
 | OP_HASH160 | 0xa9 | 栈顶项进行两次HASH，先用SHA-256，再用RIPEMD-160 |
 | OP_HASH256 |  0xaa |栈顶项用SHA-256算法HASH两次 |
