@@ -20,7 +20,7 @@
 * 邱蒙
 * 戎如香
 * 史磊
-* [汪海波](www.weibo.com/highball)
+* [汪海波](http://www.weibo.com/highball)
 * 王宏钢
 * 王秒
 * 辛颖
