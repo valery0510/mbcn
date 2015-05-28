@@ -34,6 +34,8 @@
 * 赵冬帅
 * [赵余](http://weibo.com/zyandroid)
 * YANG YANG
+* 申屠青春
+* 李建源
 
 <hr />
 

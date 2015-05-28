@@ -9,7 +9,7 @@
 * [第5章 交易](Chapter05.md)
 * [第6章 比特币网络](Chapter06.md)
 * [第7章 区块链](Chapter07.md)
-* [第8章 交易与共识](Chapter08.md)
+* [第8章 挖矿与共识](Chapter08.md)
 * [第9章 竞争币、竞争块链和应用程序](Chapter09.md)
 * [第10章 比特币安全](Chapter10.md)
 * [附录1](Appendix1.md)
