@@ -17,7 +17,7 @@
 * 牛东晓
 * 秦彤
 * [邱頔](http://weibo.com/imcoddy)
-* 邱蒙
+* [邱蒙](http://weibo.com/lookr)
 * 戎如香
 * 史磊
 * [汪海波](http://www.weibo.com/highball)
@@ -44,4 +44,4 @@
 <hr />
 
 
-如果您发现了书中的错误，请点击[**此处**](http://www.mikecrm.com/f.php?t=rfcRrW)填写《勘误收集表》
+如果您发现了书中的错误，请点击[**此处**](http://www.mikecrm.com/f.php?t=rfcRrW)填写《勘误收集表》。目前，我们已经收到部分读者的反馈，更新了书中的一些错误，在此对各位的火眼金睛表示感谢。
